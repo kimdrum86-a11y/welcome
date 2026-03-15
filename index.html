@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>효진 & 영진 상견례 초대장</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700&display=swap');
+        
+        body { font-family: 'Nanum+Myeongjo', serif; background-color: #f8f5f2; margin: 0; padding: 0; color: #333; line-height: 1.8; }
+        .container { max-width: 450px; margin: 0 auto; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.05); }
+        .header { padding: 60px 20px; text-align: center; background-color: #faf7f4; }
+        
+        /* [수정] INVITATION 스타일을 CLOSING과 동일하게 변경 */
+        .header p { font-size: 1.2rem; letter-spacing: 2px; color: #8d7b68; margin-bottom: 30px; font-weight: normal; }
+        
+        .header h1 { font-size: 1.5rem; letter-spacing: 2px; color: #8d7b68; margin: 0; }
+        
+        /* [수정] 비디오 컨테이너 CSS (유연한 높이) */
+        .main-img {
+            width: 100%;
+            height: auto; /* 고정 높이를 auto로 변경하여 비디오 비율에 따름 */
+            background: #f0edea;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        /* [추가] 비디오 태그를 위한 CSS */
+        .main-img video {
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            display: block; /* 불필요한 공백 제거 */
+        }
+
+        .content { padding: 50px 30px; text-align: center; }
+        .content p { margin-bottom: 20px; }
+
+        /* 달력 스타일 */
+        .calendar-container { margin: 40px 0; padding: 20px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .calendar-title { font-size: 1.1rem; color: #8d7b68; margin-bottom: 15px; font-weight: bold; }
+        .calendar { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+        .calendar th { padding: 10px; color: #a89a8e; font-weight: normal; }
+        .calendar td { padding: 10px; text-align: center; }
+        .calendar .sun { color: #d9534f; }
+        .calendar .sat { color: #5bc0de; }
+        .calendar .today { background: #8d7b68; color: #fff; border-radius: 50%; width: 30px; height: 30px; display: inline-block; line-height: 30px; }
+
+        .date-info { margin-top: 30px; padding: 20px; background: #fdfaf7; border-radius: 10px; }
+        .highlight { color: #8d7b68; font-weight: bold; }
+        
+        .location-btn { display: inline-block; background: #8d7b68; color: #fff; padding: 15px 30px; text-decoration: none; border-radius: 5px; margin-top: 20px; font-weight: bold; transition: 0.3s; }
+        .location-btn:active { background: #6f5f50; }
+
+        .footer { padding: 50px 20px; background: #faf7f4; font-size: 0.85rem; color: #777; text-align: center; border-top: 1px solid #eee; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <p>INVITATION</p>
+        <h1>효진 & 영진<br>상견례에 초대합니다</h1>
+    </div>
+
+    <div class="main-img">
+        <video autoplay muted loop playsinline src="main.mp4"></video>
+    </div>
+
+    <div class="content">
+        <p>서로 다른 길을 걸어온 저희 두 사람이<br>부부라는 이름으로 하나가 되려 합니다</p>
+        <p>그에 앞서 두 가족의 첫 만남을 시작하려 합니다<br>저희가 결혼이라는 결실을 맺을 수 있도록<br>예쁘게 지켜봐 주시고 응원해 주신 가족분들께<br>감사드리며 봄의 시작인 4월에<br>양가 가족들을 모시고<br>의미 있는 식사 자리를 마련하고자 합니다<br>참석하셔서 소중한 만남의 자리를 빛내주세요<br><br>-효진&영진-</p>
+
+        <div class="calendar-container">
+            <div class="calendar-title">2026. 04</div>
+            <table class="calendar">
+                <thead>
+                    <tr>
+                        <th class="sun">일</th><th>월</th><th>화</th><th>수</th><th>목</th><th>금</th><th class="sat">토</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td class="sat">4</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td class="sat"><span class="today">11</span></td>
+                    </tr>
+                    <tr>
+                        <td class="sun">12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td class="sat">18</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td class="sat">25</td>
+                    </tr>
+                    <tr>
+                        <td class="sun">26</td><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="date-info">
+            <p><span class="highlight">일시:</span> 2026년 4월 11일(토) 낮 12시</p>
+            <p><span class="highlight">장소:</span> 고우가 강남점</p>
+            <p style="font-size: 0.85rem; color: #888;">서울 강남구 테헤란로 152 강남N타워 B2층</p>
+            
+            <a href="https://naver.me/5S9kYJLG" class="location-btn" target="_blank">상견례 장소 길찾기</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>강남N타워 내 무료 주차가 가능합니다<br>저희가 먼저 도착하여 기다리겠습니다</p>
+    </div>
+
+    <div style="margin-top: 60px; padding: 40px 30px; border: 1px dashed #d1c7bd; border-radius: 15px; background-color: #fdfaf7; text-align: center;">
+        <p style="font-size: 0.8rem; color: #a89a8e; letter-spacing: 3px; margin-bottom: 10px; font-family: sans-serif;">NEXT STEP</p>
+        <h3 style="color: #8d7b68; font-size: 1.4rem; margin-top: 0; margin-bottom: 30px;">혼주 한복 피팅 안내</h3>
+        
+        <div style="margin-bottom: 30px; font-size: 1.05rem;">
+            <p style="margin: 5px 0;">식사 후 양가 부모님을 모시고</p>
+            <p style="margin: 5px 0;">혼주 한복 피팅을 진행할 예정입니다</p>
+        </div>
+
+        <div style="background-color: #fff; border: 1px solid #eee; border-radius: 10px; padding: 25px; margin-bottom: 30px; text-align: center; display: inline-block; width: 100%; box-sizing: border-box;">
+            <p style="font-size: 1.1rem; margin: 10px 0;"><span style="font-weight: bold; color: #555;">시간:</span> <span style="color: #333;">오후 2시 30분</span></p>
+            <p style="font-size: 1.1rem; margin: 10px 0;"><span style="font-weight: bold; color: #555;">장소:</span> <span style="color: #333;">황희 우리옷</span></p>
+            <p style="font-size: 0.9rem; color: #888; margin-top: 10px; line-height: 1.4;">서울 강남구 학동로 413 (청담동)</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 10px;">
+            <a href="https://naver.me/FXwo50f6" 
+               style="display: inline-block; background: #8d7b68; color: #fff; padding: 15px 35px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 1.1rem; transition: background 0.3s;" 
+               target="_blank">
+               피팅 장소 길찾기
+            </a>
+        </div>
+        
+        <p style="font-size: 0.85rem; color: #999; margin-top: 20px; line-height: 1.6; text-align: center;">
+            * 상견례 장소에서 차량으로 약 10~15분 소요됩니다<br>
+        </p>
+    </div>
+
+    <div style="margin-top: 70px; padding: 50px 20px; text-align: center; border-top: 1px solid #f0edea;">
+        <h3 style="color: #8d7b68; font-size: 1.2rem; letter-spacing: 2px; margin-bottom: 30px;">CLOSING</h3>
+        
+        <div style="font-size: 0.95rem; line-height: 2; color: #555; word-break: keep-all;">
+            <p>저희 두 사람이 건강하게 자라<br>
+            소중한 인연을 맺을 수 있었던 것은<br>
+            모두 <span style="color: #8d7b68; font-weight: bold;">부모님의 사랑과 헌신</span> 덕분입니다</p>
+
+            <p style="margin-top: 20px;">그 깊은 은혜 잊지 않고<br>
+            서로를 아끼고 존중하며<br>
+            서로의 웃음이 되어서 보답하겠습니다</p>
+            
+            <p style="margin-top: 20px;">지켜봐 주시고 응원해 주세요<br>
+            감사합니다<br>그리고 사랑합니다</p>
+        </div>
+
+        <p style="margin-top: 40px; font-size: 1.1rem; color: #333; letter-spacing: 1px;">
+            <span style="font-weight: bold;">효진 · 영진</span> 올림
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
